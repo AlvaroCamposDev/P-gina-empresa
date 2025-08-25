@@ -2,263 +2,313 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IRL Tech Solutions</title>
-  
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Tu CSS -->
   <link rel="stylesheet" href="Assets/style/styles.css" />
 </head>
 
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#" style="position: relative; left: -60px;">
-          <img src="./Assets/img/LOGOPRO.png" alt="IRL Tech Logo" width="140" height="40">
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border: 1px solid rgba(255,255,255,0.3);">
-          <!-- Hamburger SVG -->
-          <svg class="icon-svg" viewBox="0 0 24 24" fill="white" style="width: 20px; height: 20px;">
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-          </svg>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#inicio">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servicios
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#servicios">IT Staffing & Recruiting</a></li>
-                <li><a class="dropdown-item" href="#servicios">Equipos con AI</a></li>
-                <li><a class="dropdown-item" href="#servicios">Academia TI</a></li>
-                <li><hr class="dropdown-divider" style="border-color: rgba(255,255,255,0.1);"></li>
-                <li><a class="dropdown-item" href="#proyectos">Casos de Éxito</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tecnologias.html">Tecnologías</a>
-            </li>
-            <li class="nav-item">
-              <button class="btn btn-new">Inicio</button>
-            </li>
-          </ul>
-          
-          <div class="navbar-actions">
-            <button class="btn btn-enterprise">Trabaja con nosotros</button>
-            
-            <div class="social-nav">
-              <a href="https://www.linkedin.com/company/irl-tech-consulting-solutions%C2%A0spa" target="_blank" title="LinkedIn">
-                <!-- LinkedIn SVG -->
-                <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/irltechsolutionschile" target="_blank" title="Instagram">
-                <!-- Instagram SVG -->
-                <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-              </a>
-              <a href="https://wa.me/56929639651" target="_blank" title="WhatsApp">
-                <!-- WhatsApp SVG -->
-                <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+</head>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section">
-      <div class="hero-bg"></div>
-      <div class="container">
-        <div class="hero-content floating">
-          <h1 class="hero-title">
-            ¿Necesitas incorporar IA<br>
-            o automatizar tu negocio<br>
-            en tiempo récord?
-          </h1>
-          <p class="hero-subtitle">
-            Cuenta con nosotros. Entregamos un servicio end to end de manera ágil y responsiva. 
-            Nos conectamos contigo para transformar tu visión en realidad.
-          </p>
-          <div class="hero-buttons">
-            <button class="btn hero-cta">Comenzar ahora</button>
-            <button class="btn btn-agendar">
-              <!-- Calendario SVG -->
-              <svg class="icon-svg me-2" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
-                <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="position: relative; left: -60px;">
+        <img src="./Assets/img/LOGOPRO.png" alt="IRL Tech Logo" width="140" height="40">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        style="border: 1px solid rgba(255,255,255,0.3);">
+        <!-- Hamburger SVG -->
+        <svg class="icon-svg" viewBox="0 0 24 24" fill="white" style="width: 20px; height: 20px;">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#servicios">IT Staffing & Recruiting</a></li>
+              <li><a class="dropdown-item" href="#servicios">Equipos con AI</a></li>
+              <li><a class="dropdown-item" href="#servicios">Academia TI</a></li>
+              <li>
+                <hr class="dropdown-divider" style="border-color: rgba(255,255,255,0.1);">
+              </li>
+              <li><a class="dropdown-item" href="#proyectos">Casos de Éxito</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tecnologias.html">Tecnologías</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-new">Inicio</button>
+          </li>
+        </ul>
+
+        <div class="navbar-actions">
+
+
+          <div class="social-nav">
+            <a href="https://www.linkedin.com/company/irl-tech-consulting-solutions%C2%A0spa" target="_blank"
+              title="LinkedIn">
+              <!-- LinkedIn SVG -->
+              <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
               </svg>
-              AGENDAR
-            </button>
+            </a>
+            <a href="https://www.instagram.com/irltechsolutionschile" target="_blank" title="Instagram">
+              <!-- Instagram SVG -->
+              <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/56929639651" target="_blank" title="WhatsApp">
+              <!-- WhatsApp SVG -->
+              <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087" />
+              </svg>
+            </a>
+            <button class="btn btn-enterprise">Trabaja con nosotros</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <!-- About Section -->
-    <section class="section" id="nosotros" style="background: url('./Assets/img/FONDO222.jpg') center/cover no-repeat; color: white; min-height: 80vh; display: flex; align-items: center; position: relative;">
-      <!-- Difuminado exactamente en la mitad izquierda -->
-      <div style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; backdrop-filter: blur(8px); background: rgba(0,0,0,0.3); z-index: 1;"></div>
-      
-      <div class="container-fluid" style="position: relative; z-index: 2; height: 100%; padding-left: 0;">
-        <div class="row align-items-center" style="height: 80vh; margin: 0;">
-          <div class="col-6" style="display: flex; flex-direction: column; justify-content: center; padding: 0 4rem; margin-left: 2rem;">
-            <h2 class="fade-in" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 2rem; color: white; text-align: left;">Nos preocupamos end to end</h2>
-            <p class="fade-in" style="font-size: 1.3rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
-              Somos un equipo motivado, muy cercanos, motivados por el 
-              autoaprendizaje y la transformación digital. Trabajamos con 
-              altos estándares de calidad y compromiso con nuestros 
-              clientes.
-            </p>
-            <p class="fade-in" style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin: 0;">
-              En IRL Tech Solutions, ofrecemos amplias soluciones 
-              tecnológicas integrales que se adaptan a las necesidades de 
-              tu empresa. Desde el desarrollo de software hasta la 
-              implementación de inteligencia artificial, siempre dispuestos 
-              para llevar tu negocio al siguiente nivel.
-            </p>
-          </div>
-          <div class="col-6">
-            <!-- Lado derecho completamente libre para mostrar imagen nítida -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section con NUEVOS CARDS -->
-    <section id="servicios" class="section futuristic-section">
-      <div class="container">
-        <h2 class="section-title fade-in section-title-green">Revisa nuestra carta de Servicios TI</h2>
-        <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
-          Diseñamos soluciones humanas y tecnológicas que se adaptan a ti y a tu organización. 
-          Combinamos innovación, precisión y tecnología de vanguardia.
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content floating">
+        <h1 class="hero-title">
+          ¿Necesitas incorporar IA<br>
+          o automatizar tu negocio<br>
+          en tiempo récord?
+        </h1>
+        <p class="hero-subtitle">
+          Cuenta con nosotros. Entregamos un servicio end to end de manera ágil y responsiva.
+          Nos conectamos contigo para transformar tu visión en realidad.
         </p>
-        
-        <!-- NUEVOS CARDS CON ZOOM -->
-        <div class="zoom-cards">
-          <!-- Card 1: IT Staffing -->
-          <div class="zoom-card service-card-1 fade-in">
-            <div class="card-image-container">
-              <img src="./Assets/img/Card1.jpg" alt="IT Staffing" class="card-background-image">
-              <div class="image-overlay"></div>
-            </div>
-            <div class="card-badge">IT Staff</div>
-            <div class="card-content">
-              <h4>IT Staffing & Recruiting</h4>
-              <p class="card-subtitle">El talento adecuado, en el momento justo.</p>
-              <p class="card-description">
-                En un mundo donde la velocidad de ejecución marca la diferencia, en IRL Tech conectamos a las empresas con el mejor talento tecnológico del mercado. Ya sea a través de outsourcing, hunting o equipos a medida, te ayudamos a escalar capacidades rápidamente, sin comprometer calidad.
-              </p>
-              
-            </div>
+        <div class="hero-buttons">
+          <button class="btn hero-cta">Comenzar ahora</button>
+          <a href="https://calendly.com/lucas-camposm-utem/30min?month=2025-08" target="_blank" class="btn btn-agendar">
+            <!-- Calendario SVG -->
+            <svg class="icon-svg me-2" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
+              <path
+                d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+            </svg>
+            AGENDAR
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="nosotros"
+    style="background: url('./Assets/img/FONDO222.jpg') center/cover no-repeat; color: white; min-height: 80vh; display: flex; align-items: center; position: relative;">
+    <!-- Difuminado exactamente en la mitad izquierda -->
+    <div
+      style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; backdrop-filter: blur(8px); background: rgba(0,0,0,0.3); z-index: 1;">
+    </div>
+
+    <div class="container-fluid" style="position: relative; z-index: 2; height: 100%; padding-left: 0;">
+      <div class="row align-items-center" style="height: 80vh; margin: 0;">
+        <div class="col-6"
+          style="display: flex; flex-direction: column; justify-content: center; padding: 0 4rem; margin-left: 2rem;">
+          <h2 class="fade-in"
+            style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 2rem; color: white; text-align: left;">
+            Nos preocupamos end to end</h2>
+          <p class="fade-in"
+            style="font-size: 1.3rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
+            Somos un equipo motivado, muy cercanos, motivados por el
+            autoaprendizaje y la transformación digital. Trabajamos con
+            altos estándares de calidad y compromiso con nuestros
+            clientes.
+          </p>
+          <p class="fade-in" style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin: 0;">
+            En IRL Tech Solutions, ofrecemos amplias soluciones
+            tecnológicas integrales que se adaptan a las necesidades de
+            tu empresa. Desde el desarrollo de software hasta la
+            implementación de inteligencia artificial, siempre dispuestos
+            para llevar tu negocio al siguiente nivel.
+          </p>
+        </div>
+        <div class="col-6">
+          <!-- Lado derecho completamente libre para mostrar imagen nítida -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section con NUEVOS CARDS -->
+  <section id="servicios" class="section futuristic-section">
+    <div class="container">
+      <h2 class="section-title fade-in section-title-green">Revisa nuestra carta de Servicios TI</h2>
+      <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
+        Diseñamos soluciones humanas y tecnológicas que se adaptan a ti y a tu organización.
+        Combinamos innovación, precisión y tecnología de vanguardia.
+      </p>
+
+      <!-- NUEVOS CARDS CON ZOOM -->
+      <div class="zoom-cards">
+        <!-- Card 1: IT Staffing -->
+        <div class="zoom-card service-card-1 fade-in">
+          <div class="card-image-container">
+            <img src="./Assets/img/Card1.jpg" alt="IT Staffing" class="card-background-image">
+            <div class="image-overlay"></div>
           </div>
+          <div class="card-badge">IT Staff</div>
+          <div class="card-content">
+            <h4>IT Staffing & Recruiting</h4>
+            <p class="card-subtitle">El talento adecuado, en el momento justo.</p>
+            <p class="card-description">
+              En un mundo donde la velocidad de ejecución marca la diferencia, en IRL Tech conectamos a las empresas con
+              el mejor talento tecnológico del mercado. Ya sea a través de outsourcing, hunting o equipos a medida, te
+              ayudamos a escalar capacidades rápidamente, sin comprometer calidad.
+            </p>
 
-          <!-- Card 2: AI Teams -->
-          <div class="zoom-card service-card-2 fade-in">
-            <div class="card-image-container">
-              <img src="./Assets/img/Card2.jpg" alt="Equipos AI" class="card-background-image">
-              <div class="image-overlay"></div>
-            </div>
-            <div class="card-badge">Equipo</div>
-            <div class="card-content">
-              <h4>Equipos Aumentados con AI</h4>
-              <p class="card-subtitle">El poder del software, acelerado con inteligencia artificial.</p>
-              <p class="card-description">
-                Nuestros equipos de desarrollo gestionados combinan experiencia técnica, prácticas ágiles y herramientas potenciadas con IA para entregar resultados más rápidos, predecibles y de alta calidad.
-              </p>
-            </div>
           </div>
+        </div>
 
-          <!-- Card 3: IT Academy -->
-          <div class="zoom-card service-card-3 fade-in">
-            <div class="card-image-container">
-              <img src="./Assets/img/Card3.jpg" alt="IT Academia" class="card-background-image">
-              <div class="image-overlay"></div>
-            </div>
-            <div class="card-badge">Academia</div>
-            <div class="card-content">
-              <h4>IT Academy</h4>
-              <p class="card-subtitle">Formación que transforma. Capacidades que perduran.</p>
-              <p class="card-description">
-                En la era digital, aprender rápido es una ventaja competitiva. Por eso, en conjunto con nuestros partners de Kibernum IT Academy diseñamos experiencias de formación adaptadas a los desafíos del negocio y a la evolución constante del mundo tecnológico.
-              </p>
+        <!-- Card 2: AI Teams -->
+        <div class="zoom-card service-card-2 fade-in">
+          <div class="card-image-container">
+            <img src="./Assets/img/Card2.jpg" alt="Equipos AI" class="card-background-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-badge">Equipo</div>
+          <div class="card-content">
+            <h4>Equipos Aumentados con AI</h4>
+            <p class="card-subtitle">El poder del software, acelerado con inteligencia artificial.</p>
+            <p class="card-description">
+              Nuestros equipos de desarrollo gestionados combinan experiencia técnica, prácticas ágiles y herramientas
+              potenciadas con IA para entregar resultados más rápidos, predecibles y de alta calidad.
+            </p>
+          </div>
+        </div>
 
-              
-            </div>
+        <!-- Card 3: IT Academy -->
+        <div class="zoom-card service-card-3 fade-in">
+          <div class="card-image-container">
+            <img src="./Assets/img/Card3.jpg" alt="IT Academia" class="card-background-image">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="card-badge">Academia</div>
+          <div class="card-content">
+            <h4>IT Academy</h4>
+            <p class="card-subtitle">Formación que transforma. Capacidades que perduran.</p>
+            <p class="card-description">
+              En la era digital, aprender rápido es una ventaja competitiva. Por eso, en conjunto con nuestros partners
+              IT Academy diseñamos experiencias de formación adaptadas a los desafíos del negocio y a la
+              evolución constante del mundo tecnológico.
+            </p>
+
+
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
- <!-- Companies Section -->
-    <section class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
-      <div class="container text-center">
-        <h2 class="section-title fade-in">Mejoramos la calidad de vida de las organizaciones</h2>
-        <p class="section-subtitle fade-in">
-          Hemos transformado la tecnología de diversas industrias, desde el sector financiero 
-          hasta el retail, minería, construcción y salud.
-        </p>
+  <!-- Companies Section -->
+  <section class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+    <div class="container text-center">
+      <h2 class="section-title fade-in">Mejoramos la calidad de vida de las organizaciones</h2>
+      <p class="section-subtitle fade-in">
+        Hemos transformado la tecnología de diversas industrias, desde el sector financiero
+        hasta el retail, minería, construcción y salud.
+      </p>
 
-        <div class="companies-slider fade-in">
-          <div class="companies-grid">
-            <img src="./Assets/img/Logo-1.png" alt="Cliente 1" class="company-logo" />
-            <img src="./Assets/img/Logo-2.png" alt="Cliente 2" class="company-logo" />
-            <img src="./Assets/img/Logo-3.png" alt="Cliente 3" class="company-logo" />
-            <img src="./Assets/img/Logo-4.png" alt="Cliente 4" class="company-logo" />
-            <img src="./Assets/img/Logo-5.png" alt="Cliente 5" class="company-logo" />
-            <img src="./Assets/img/Logo-6.png" alt="Cliente 6" class="company-logo" />
-            <img src="./Assets/img/Logo-7.png" alt="Cliente 7" class="company-logo" />
-            <img src="./Assets/img/Logo-8.png" alt="Cliente 8" class="company-logo" />
-          </div>
+      <div class="companies-slider fade-in">
+        <div class="companies-grid">
+          <img src="./Assets/img/Logo-1.png" alt="Cliente 1" class="company-logo" />
+          <img src="./Assets/img/Logo-2.png" alt="Cliente 2" class="company-logo" />
+          <img src="./Assets/img/Logo-3.png" alt="Cliente 3" class="company-logo" />
+          <img src="./Assets/img/Logo-4.png" alt="Cliente 4" class="company-logo" />
+          <img src="./Assets/img/Logo-5.png" alt="Cliente 5" class="company-logo" />
+          <img src="./Assets/img/Logo-6.png" alt="Cliente 6" class="company-logo" />
+          <img src="./Assets/img/Logo-7.png" alt="Cliente 7" class="company-logo" />
+          <img src="./Assets/img/Logo-8.png" alt="Cliente 8" class="company-logo" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-   <!-- Projects Section - Minimalista -->
-<section id="proyectos" class="minimal-carousel-section">
-  <div class="container">
-    <h2 class="minimal-title">Casos de éxito destacados</h2>
-    
-    <div class="minimal-carousel">
-      <!-- Progress Bar -->
-      <div class="carousel-progress">
-        <div class="progress-bar" id="progressBar"></div>
-      </div>
-      
-      <!-- Cards Container -->
-      <div class="cards-container" id="cardsContainer">
-        <div class="cards-track" id="cardsTrack">
-          
-          <!-- Card 1 -->
-          <article class="minimal-card active" data-category="fintech">
-            <div class="card-image">
-              <img src="./Assets/img/Proyecto-1.png" alt="Banco Falabella" loading="lazy">
-              <div class="image-gradient"></div>
-            </div>
-            <div class="card-content">
+  <!-- Projects Section - Minimalista -->
+  <!-- Projects Section - NUEVO CARRUSEL -->
+  <section id="proyectos" class="projects-carousel-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Casos de éxito destacados</h2>
+
+      <div class="carousel-container">
+        <!-- Radio inputs para controlar el carrusel -->
+        <input type="radio" name="project-slider" id="project-1" checked>
+        <input type="radio" name="project-slider" id="project-2">
+        <input type="radio" name="project-slider" id="project-3">
+        <input type="radio" name="project-slider" id="project-4">
+
+        <!-- Cards del carrusel -->
+        <div class="project-cards">
+          <label class="project-card" for="project-1" id="card-1">
+            <img src="./Assets/img/Proyecto-1.png" alt="Banco Falabella">
+            <div class="card-overlay">
               <span class="card-category">Fintech</span>
               <h3 class="card-title">Automatización Banco Falabella</h3>
-              <p class="card-description">
-                Optimización con Python y ML reduciendo tiempos operativos en 65%.
-              </p>
-              <div class="card-metrics">
+            </div>
+          </label>
+
+          <label class="project-card" for="project-2" id="card-2">
+            <img src="./Assets/img/Proyecto-2.jpg" alt="Constructora Marfarías">
+            <div class="card-overlay">
+              <span class="card-category">Construcción</span>
+              <h3 class="card-title">Gestión Constructora Marfarías</h3>
+            </div>
+          </label>
+
+          <label class="project-card" for="project-3" id="card-3">
+            <img src="./Assets/img/Proyecto-3.jpg" alt="NotaríaX">
+            <div class="card-overlay">
+              <span class="card-category">Legal Tech</span>
+              <h3 class="card-title">Plataforma NotaríaX</h3>
+            </div>
+          </label>
+
+          <label class="project-card" for="project-4" id="card-4">
+            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500" alt="E-commerce">
+            <div class="card-overlay">
+              <span class="card-category">E-commerce</span>
+              <h3 class="card-title">Plataforma + IA</h3>
+            </div>
+          </label>
+        </div>
+
+        <!-- Panel de información del proyecto -->
+        <div class="project-info-panel">
+          <div class="project-details">
+            <div class="info-content" id="info-1">
+              <h4>Automatización Banco Falabella</h4>
+              <p class="project-description">Optimización con Python y ML reduciendo tiempos operativos en 65%.</p>
+              <div class="project-metrics">
                 <div class="metric">
                   <span class="metric-value">65%</span>
                   <span class="metric-label">Reducción</span>
@@ -268,28 +318,13 @@
                   <span class="metric-label">Errores</span>
                 </div>
               </div>
-              <button class="card-action">
-                <span>Ver detalles</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14m-7-7 7 7-7 7"/>
-                </svg>
-              </button>
+              <button class="project-btn">Ver detalles</button>
             </div>
-          </article>
 
-          <!-- Card 2 -->
-          <article class="minimal-card" data-category="construction">
-            <div class="card-image">
-              <img src="./Assets/img/Proyecto-2.jpg" alt="Constructora Marfarías" loading="lazy">
-              <div class="image-gradient"></div>
-            </div>
-            <div class="card-content">
-              <span class="card-category">Construcción</span>
-              <h3 class="card-title">Gestión Constructora Marfarías</h3>
-              <p class="card-description">
-                Sistema integral para 20+ proyectos con control en tiempo real.
-              </p>
-              <div class="card-metrics">
+            <div class="info-content" id="info-2">
+              <h4>Gestión Constructora Marfarías</h4>
+              <p class="project-description">Sistema integral para 20+ proyectos con control en tiempo real.</p>
+              <div class="project-metrics">
                 <div class="metric">
                   <span class="metric-value">20+</span>
                   <span class="metric-label">Proyectos</span>
@@ -299,28 +334,13 @@
                   <span class="metric-label">Éxito</span>
                 </div>
               </div>
-              <a href="https://constructoramarfarias.cl/" target="_blank" class="card-action">
-                <span>Ver sitio</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m0-3h9v9m-9 0 9-9"/>
-                </svg>
-              </a>
+              <a href="https://constructoramarfarias.cl/" target="_blank" class="project-btn">Ver sitio</a>
             </div>
-          </article>
 
-          <!-- Card 3 -->
-          <article class="minimal-card" data-category="legal">
-            <div class="card-image">
-              <img src="./Assets/img/Proyecto-3.jpg" alt="NotaríaX" loading="lazy">
-              <div class="image-gradient"></div>
-            </div>
-            <div class="card-content">
-              <span class="card-category">Legal Tech</span>
-              <h3 class="card-title">Plataforma NotaríaX</h3>
-              <p class="card-description">
-                Servicios digitales con firma electrónica y reconocimiento facial.
-              </p>
-              <div class="card-metrics">
+            <div class="info-content" id="info-3">
+              <h4>Plataforma NotaríaX</h4>
+              <p class="project-description">Servicios digitales con firma electrónica y reconocimiento facial.</p>
+              <div class="project-metrics">
                 <div class="metric">
                   <span class="metric-value">50K+</span>
                   <span class="metric-label">Firmas</span>
@@ -330,28 +350,13 @@
                   <span class="metric-label">Seguridad</span>
                 </div>
               </div>
-              <a href="https://www.notariax.cl/" target="_blank" class="card-action">
-                <span>Visitar</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m0-3h9v9m-9 0 9-9"/>
-                </svg>
-              </a>
+              <a href="https://www.notariax.cl/" target="_blank" class="project-btn">Visitar</a>
             </div>
-          </article>
 
-          <!-- Card 4 -->
-          <article class="minimal-card" data-category="ecommerce">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=500" alt="E-commerce" loading="lazy">
-              <div class="image-gradient"></div>
-            </div>
-            <div class="card-content">
-              <span class="card-category">E-commerce</span>
-              <h3 class="card-title">Plataforma + IA</h3>
-              <p class="card-description">
-                E-commerce inteligente con recomendaciones y analytics predictivos.
-              </p>
-              <div class="card-metrics">
+            <div class="info-content" id="info-4">
+              <h4>Plataforma + IA</h4>
+              <p class="project-description">E-commerce inteligente con recomendaciones y analytics predictivos.</p>
+              <div class="project-metrics">
                 <div class="metric">
                   <span class="metric-value">300%</span>
                   <span class="metric-label">ROI</span>
@@ -361,387 +366,431 @@
                   <span class="metric-label">Conversión</span>
                 </div>
               </div>
-              <button class="card-action">
-                <span>Demo</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="5,3 19,12 5,21"/>
-                </svg>
-              </button>
+              <button class="project-btn">Demo</button>
             </div>
-          </article>
+          </div>
 
+          <!-- Barra de progreso -->
+          <div class="progress-bar">
+            <span class="progress"></span>
+          </div>
+        </div>
+
+        <!-- Navegación con dots -->
+        <div class="carousel-navigation">
+          <label class="nav-dot" for="project-1"></label>
+          <label class="nav-dot" for="project-2"></label>
+          <label class="nav-dot" for="project-3"></label>
+          <label class="nav-dot" for="project-4"></label>
         </div>
       </div>
-
-      <!-- Navigation -->
-      <div class="carousel-nav">
-        <button class="nav-btn prev" id="prevBtn" aria-label="Anterior">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M15 18l-6-6 6-6"/>
-          </svg>
-        </button>
-        
-        <div class="nav-dots" id="navDots">
-          <!-- Generated by JS -->
-        </div>
-        
-        <button class="nav-btn next" id="nextBtn" aria-label="Siguiente">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 18l6-6-6-6"/>
-          </svg>
-        </button>
-      </div>
-      
-      <!-- Autoplay Toggle -->
-      <button class="autoplay-toggle" id="autoplayToggle" aria-label="Pausar/Reanudar">
-        <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polygon points="5,3 19,12 5,21"/>
-        </svg>
-        <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="6" y="4" width="4" height="16"/>
-          <rect x="14" y="4" width="4" height="16"/>
-        </svg>
-      </button>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-    <!-- Methodology Section -->
-    <section class="section" style="background: var(--dark-gradient); color: white;">
-      <div class="container">
-        <h2 class="section-title fade-in" style="-webkit-text-fill-color: white;">Trabajamos con enfoque en calidad</h2>
-        <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
-          Nuestra metodología combina un enfoque humano, integral y tecnológico. 
-          Fusionamos Design Thinking y Agile para garantizar procesos iterativos y centrados en el usuario.
-        </p>
-        
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="methodology-step">
-              <div class="step-number">1</div>
-              <div>
-                <h5>Explorar y empatizar</h5>
-                <p>Entendemos profundamente las necesidades y desafíos de tu negocio.</p>
-              </div>
-            </div>
-            
-            <div class="methodology-step">
-              <div class="step-number">2</div>
-              <div>
-                <h5>Idear soluciones</h5>
-                <p>Desarrollamos propuestas innovadoras y personalizadas.</p>
-              </div>
-            </div>
-            
-            <div class="methodology-step">
-              <div class="step-number">3</div>
-              <div>
-                <h5>Prototipar y desarrollar</h5>
-                <p>Creamos soluciones tangibles con tecnología de vanguardia.</p>
-              </div>
-            </div>
-            
-            <div class="methodology-step">
-              <div class="step-number">4</div>
-              <div>
-                <h5>Validar con usuarios</h5>
-                <p>Probamos y refinamos con feedback real de usuarios.</p>
-              </div>
-            </div>
-            
-            <div class="methodology-step">
-              <div class="step-number">5</div>
-              <div>
-                <h5>Iterar y automatizar</h5>
-                <p>Mejoramos continuamente y automatizamos procesos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technologies Section -->
-    <section id="tecnologias" class="section">
-      <div class="container">
-        <h2 class="section-title fade-in">Tecnologías a tu alcance</h2>
-        <p class="section-subtitle fade-in">
-          Trabajamos con tecnología de última generación, seleccionando los sistemas más adecuados 
-          para cada proyecto. Desarrollamos códigos propios y utilizamos herramientas de forma intuitiva.
-        </p>
-        
-       <div class="tech-grid fade-in">
-  <!-- Python -->
-  <div class="tech-icon" style="color: #3776ab;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" fill="#3776ab"/>
-    </svg>
-    <div class="tech-name">Python</div>
-  </div>
-
-  <!-- JavaScript -->
-  <div class="tech-icon" style="color: #f7df1e;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" fill="#f7df1e"/>
-    </svg>
-    <div class="tech-name">JavaScript</div>
-  </div>
-
-  <!-- React -->
-  <div class="tech-icon" style="color: #61dafb;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <circle cx="12" cy="12" r="2" fill="#61dafb"/>
-      <path d="M12 1s-4 4-4 11 4 11 4 11 4-4 4-11-4-11-4-11z" stroke="#61dafb" stroke-width="2" fill="none"/>
-      <path d="M2.5 12s4-4 9.5-4 9.5 4 9.5 4-4 4-9.5 4-9.5-4-9.5-4z" stroke="#61dafb" stroke-width="2" fill="none"/>
-      <path d="M2.5 12s4 4 9.5 4 9.5-4 9.5-4-4-4-9.5-4-9.5 4-9.5 4z" stroke="#61dafb" stroke-width="2" fill="none"/>
-    </svg>
-    <div class="tech-name">React</div>
-  </div>
-
-  <!-- Node.js -->
-  <div class="tech-icon" style="color: #339933;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.6.065-.037.150-.023.219.028l2.255 1.339c.082.046.197.046.272 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.192-.137-.242L11.031.595c-.082-.047-.193-.047-.276 0L2.006 5.68c-.084.05-.138.143-.138.242v10.164c0 .099.054.191.138.238l2.409 1.392c1.307.654 2.108-.116 2.108-.89V6.921c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v9.905c0 1.726-.94 2.717-2.58 2.717-.504 0-.898 0-2.004-.544L1.137 17.6c-.569-.327-.922-.942-.922-1.598V6.921c0-.658.353-1.272.922-1.6L9.933.244c.55-.315 1.284-.315 1.834 0L20.565 5.32c.569.328.922.942.922 1.6v9.083c0 .656-.353 1.271-.922 1.598L11.92 23.753c-.281.163-.601.247-.922.247z" fill="#339933"/>
-    </svg>
-    <div class="tech-name">Node.js</div>
-  </div>
-
-  <!-- Database -->
-  <div class="tech-icon" style="color: #336791;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <ellipse cx="12" cy="5" rx="9" ry="3" stroke="#336791" stroke-width="2" fill="rgba(51,103,145,0.2)"/>
-      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" stroke="#336791" stroke-width="2"/>
-      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" stroke="#336791" stroke-width="2" fill="none"/>
-    </svg>
-    <div class="tech-name">Database</div>
-  </div>
-
-  <!-- Cloud -->
-  <div class="tech-icon" style="color: #4285f4;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <path d="M18.5 13h-13c-1.1 0-2-.9-2-2s.9-2 2-2c.35 0 .69.08 1 .22C7.39 7.33 9.37 6 11.6 6c2.85 0 5.15 2.41 5.15 5.38 0 .28-.02.55-.06.82.8.16 1.31.89 1.31 1.8 0 1-.8 2-2 2z" fill="#4285f4"/>
-    </svg>
-    <div class="tech-name">Cloud</div>
-  </div>
-
-  <!-- Analytics -->
-  <div class="tech-icon" style="color: #ff6b35;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <path d="M3 3v18h18" stroke="#ff6b35" stroke-width="2"/>
-      <path d="M7 16l4-4 4 4 6-6" stroke="#ff6b35" stroke-width="2" fill="none"/>
-      <circle cx="7" cy="16" r="2" fill="#ff6b35"/>
-      <circle cx="11" cy="12" r="2" fill="#ff6b35"/>
-      <circle cx="15" cy="16" r="2" fill="#ff6b35"/>
-      <circle cx="21" cy="10" r="2" fill="#ff6b35"/>
-    </svg>
-    <div class="tech-name">Analytics</div>
-  </div>
-
-  <!-- AI -->
-  <div class="tech-icon" style="color: #8e44ad;">
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
-      <circle cx="9" cy="12" r="1" fill="#8e44ad"/>
-      <circle cx="15" cy="12" r="1" fill="#8e44ad"/>
-      <path d="M8 21l4-7 4 7M3 7l3 2-3 2M18 7l3 2-3 2" stroke="#8e44ad" stroke-width="2"/>
-      <path d="M7.5 4.21c.79-.02 1.61.04 2.5.21 1.77-.37 3.94-.35 5.5.21 2.5 1.5 3.5 4.5 2.5 7.5-.5 1.5-1.5 2.5-3 3-1.5.5-3.5.5-5 0-1.5-.5-2.5-1.5-3-3-1-3 0-6 2.5-7.5.89-.56 1.71-.62 2.5-.21" stroke="#8e44ad" stroke-width="2" fill="rgba(142,68,173,0.1)"/>
-    </svg>
-    <div class="tech-name">AI/ML</div>
-  </div>
-</div>
-      </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="section" style="background: var(--dark-gradient); color: white; position: relative; overflow: hidden;">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Video Background -->
-          <div class="col-lg-6 fade-in">
-            <div class="video-container" style="position: relative; border-radius: 20px; overflow: hidden;">
-              <video class="w-100" autoplay muted loop playsinline style="border-radius: 20px;">
-                <source src="./Assets/video/Nosotros.mp4" type="video/mp4">
-                Tu navegador no soporta videos HTML5.
-              </video>
-            </div>
-          </div>
-          
-          <!-- Text Content -->
-          <div class="col-lg-6 fade-in">
-            <h2 class="display-4 mb-4" style="color: white;">Sé uno de nosotros</h2>
-            <p class="lead mb-4" style="color: rgba(255,255,255,0.9);">
-              Si eres un profesional del área de la tecnología, con ganas de aprender y crecer, 
-              ¡te invitamos a ser parte de nuestro equipo!
-            </p>
-            <p class="mb-4" style="color: rgba(255,255,255,0.8);">
-              En IRL Tech Solutions buscamos personas apasionadas por la tecnología y el desarrollo 
-              de soluciones innovadoras. Ofrecemos un ambiente de trabajo colaborativo, oportunidades 
-              de desarrollo profesional y proyectos desafiantes.
-            </p>
-            <button class="btn btn-contact">Postula ahora</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-   
-    <!-- CTA Seccion -->
-    <section class="section" style="background: url('./Assets/img/foto2.jpg') center/cover no-repeat; color: white; min-height: 70vh; display: flex; align-items: center; text-align: center; position: relative;">
-      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 1;"></div>
-      <div class="container" style="position: relative; z-index: 2;">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <h2 class="fade-in" style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 2rem; color: white; line-height: 1.2;">"No solo diseñamos tecnologías"</h2>
-            <h3 class="fade-in" style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 400; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">También creamos soluciones inteligentes, rápidas y permanentes</h3>
-            <button class="btn btn-light btn-lg px-5 fade-in" style="border-radius: 50px; font-weight: 600; color: #667eea; padding: 1rem 3rem; font-size: 1.1rem;">Comenzar proyecto</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="section" style="background: url('./Assets/img/FONDO3.jpg') center/cover no-repeat;">
-      <div class="container">
-        <h2 class="section-title fade-in" style="color: white;">Contáctanos</h2>
-        <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
-          Si tienes alguna consulta o necesitas más información, no dudes en contactarnos. 
-          Podemos orientar tus ideas de negocio y desarrollarlas.
-        </p>
-        
-        <form class="contact-form fade-in">
-          <h3 style="color: white; text-align: center; margin-bottom: 2rem;">Formulario de contacto</h3>
-          
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label" style="color: white;">Nombre <span style="color: #667eea;">*</span></label>
-              <input type="text" class="form-control" name="nombre" placeholder="Tu nombre" required>
-              <small class="character-count">0/255</small>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label" style="color: white;">E-mail <span style="color: #667eea;">*</span></label>
-              <input type="email" class="form-control" name="email" placeholder="tu@email.com" required>
-            </div>
-          </div>
-          
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label" style="color: white;">Teléfono</label>
-              <div class="input-group">
-                <select class="form-select country-code" style="max-width: 80px;">
-                  <option value="+56">+56</option>
-                  <option value="+1">+1</option>
-                  <option value="+34">+34</option>
-                  <option value="+52">+52</option>
-                  <option value="+57">+57</option>
-                </select>
-                <input type="tel" class="form-control" name="telefono" placeholder="912345678">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label" style="color: white;">País <span style="color: #667eea;">*</span></label>
-              <select class="form-control" name="pais" required>
-                <option value="">Selecciona tu país</option>
-                <option value="Chile">Chile</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Colombia">Colombia</option>
-                <option value="México">México</option>
-                <option value="Perú">Perú</option>
-                <option value="España">España</option>
-                <option value="Estados Unidos">Estados Unidos</option>
-                <option value="Otro">Otro</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="mb-3">
-            <label class="form-label" style="color: white;">Nombre de la empresa <span style="color: #667eea;">*</span></label>
-            <input type="text" class="form-control" name="empresa" placeholder="Tu empresa" required>
-          </div>
-          
-          <div class="mb-3">
-            <label class="form-label" style="color: white;">Cuéntanos tu solicitud <span style="color: #667eea;">*</span></label>
-            <small style="color: rgba(255,255,255,0.6); display: block; margin-bottom: 0.5rem;">Mín 30 y máx 300 caracteres</small>
-            <textarea class="form-control message-textarea" name="mensaje" rows="4" placeholder="Describe tu proyecto o necesidad..." required minlength="30" maxlength="300"></textarea>
-            <small class="character-count-message">0/300</small>
-          </div>
-          
-          <div class="text-center">
-            <button type="submit" class="btn btn-contact">
-              <!-- Send SVG -->
-              <svg class="icon-svg me-2" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-              </svg>
-              Enviar mensaje
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="footer-brand mb-3">
-              <img src="./Assets/img/LOGOPRO.png" alt="IRL Tech Solutions" width="160" height="45" style="margin-bottom: 1rem;">
-            </div>
-            <h5>IRL Tech Solutions</h5>
-            <p>Transformando el futuro a través de la tecnología</p>
-          </div>
-          <div class="col-lg-6 text-center">
-            <h6>Síguenos en:</h6>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/company/irl-tech-consulting-solutions%C2%A0spa" target="_blank">
-                <!-- LinkedIn SVG -->
-                <svg class="icon-svg" viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/irltechsolutionschile" target="_blank">
-                <!-- Instagram SVG -->
-                <svg class="icon-svg" viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-              </a>
-              <a href="https://wa.me/56929639651" target="_blank">
-                <!-- WhatsApp SVG -->
-                <svg class="icon-svg" viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087"/>
-                </svg>
-              </a>  
-            </div>
-          </div>
-        </div>
-        <hr style="border-color: rgba(255,255,255,0.2);">
-        <div class="text-center">
-          <p>&copy; 2025 IRL Tech Solutions. Todos los derechos reservados.</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Floating Agendar Button -->
-    <div class="floating-agendar">
-      <button class="btn btn-agendar">
-        <!-- Calendario SVG -->
-        <svg class="icon-svg me-2" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
-          <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
-        </svg>
-        AGENDAR
-      </button>
-    </div>
-
-    <!-- Back to top button -->
-    <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-      <!-- Chevron Up SVG -->
-      <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
-        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+  <!-- Navigation -->
+  <div class="carousel-nav">
+    <button class="nav-btn prev" id="prevBtn" aria-label="Anterior">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6" />
       </svg>
     </button>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="Assets/script/script.js"></script>
-  </body>
-  </html>
+    <div class="nav-dots" id="navDots">
+      <!-- Generated by JS -->
+    </div>
+
+    <button class="nav-btn next" id="nextBtn" aria-label="Siguiente">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Autoplay Toggle -->
+  <button class="autoplay-toggle" id="autoplayToggle" aria-label="Pausar/Reanudar">
+    <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2">
+      <polygon points="5,3 19,12 5,21" />
+    </svg>
+    <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2">
+      <rect x="6" y="4" width="4" height="16" />
+      <rect x="14" y="4" width="4" height="16" />
+    </svg>
+  </button>
+  </div>
+  </div>
+  </section>
+
+
+
+  <!-- Methodology Section -->
+  <section class="section" style="background: var(--dark-gradient); color: white;">
+    <div class="container">
+      <h2 class="section-title fade-in" style="-webkit-text-fill-color: white;">Trabajamos con enfoque en calidad</h2>
+      <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
+        Nuestra metodología combina un enfoque humano, integral y tecnológico.
+        Fusionamos Design Thinking y Agile para garantizar procesos iterativos y centrados en el usuario.
+      </p>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="methodology-step">
+            <div class="step-number">1</div>
+            <div>
+              <h5>Explorar y empatizar</h5>
+              <p>Entendemos profundamente las necesidades y desafíos de tu negocio.</p>
+            </div>
+          </div>
+
+          <div class="methodology-step">
+            <div class="step-number">2</div>
+            <div>
+              <h5>Idear soluciones</h5>
+              <p>Desarrollamos propuestas innovadoras y personalizadas.</p>
+            </div>
+          </div>
+
+          <div class="methodology-step">
+            <div class="step-number">3</div>
+            <div>
+              <h5>Prototipar y desarrollar</h5>
+              <p>Creamos soluciones tangibles con tecnología de vanguardia.</p>
+            </div>
+          </div>
+
+          <div class="methodology-step">
+            <div class="step-number">4</div>
+            <div>
+              <h5>Validar con usuarios</h5>
+              <p>Probamos y refinamos con feedback real de usuarios.</p>
+            </div>
+          </div>
+
+          <div class="methodology-step">
+            <div class="step-number">5</div>
+            <div>
+              <h5>Iterar y automatizar</h5>
+              <p>Mejoramos continuamente y automatizamos procesos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section id="tecnologias" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in">Tecnologías a tu alcance</h2>
+      <p class="section-subtitle fade-in">
+        Trabajamos con tecnología de última generación, seleccionando los sistemas más adecuados
+        para cada proyecto. Desarrollamos códigos propios y utilizamos herramientas de forma intuitiva.
+      </p>
+
+      <div class="tech-grid fade-in">
+        <!-- Python -->
+        <div class="tech-icon" style="color: #3776ab;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"
+              fill="#3776ab" />
+          </svg>
+          <div class="tech-name">Python</div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="tech-icon" style="color: #f7df1e;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+              fill="#f7df1e" />
+          </svg>
+          <div class="tech-name">JavaScript</div>
+        </div>
+
+        <!-- React -->
+        <div class="tech-icon" style="color: #61dafb;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="2" fill="#61dafb" />
+            <path d="M12 1s-4 4-4 11 4 11 4 11 4-4 4-11-4-11-4-11z" stroke="#61dafb" stroke-width="2" fill="none" />
+            <path d="M2.5 12s4-4 9.5-4 9.5 4 9.5 4-4 4-9.5 4-9.5-4-9.5-4z" stroke="#61dafb" stroke-width="2"
+              fill="none" />
+            <path d="M2.5 12s4 4 9.5 4 9.5-4 9.5-4-4-4-9.5-4-9.5 4-9.5 4z" stroke="#61dafb" stroke-width="2"
+              fill="none" />
+          </svg>
+          <div class="tech-name">React</div>
+        </div>
+
+        <!-- Node.js -->
+        <div class="tech-icon" style="color: #339933;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.6.065-.037.150-.023.219.028l2.255 1.339c.082.046.197.046.272 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.192-.137-.242L11.031.595c-.082-.047-.193-.047-.276 0L2.006 5.68c-.084.05-.138.143-.138.242v10.164c0 .099.054.191.138.238l2.409 1.392c1.307.654 2.108-.116 2.108-.89V6.921c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v9.905c0 1.726-.94 2.717-2.58 2.717-.504 0-.898 0-2.004-.544L1.137 17.6c-.569-.327-.922-.942-.922-1.598V6.921c0-.658.353-1.272.922-1.6L9.933.244c.55-.315 1.284-.315 1.834 0L20.565 5.32c.569.328.922.942.922 1.6v9.083c0 .656-.353 1.271-.922 1.598L11.92 23.753c-.281.163-.601.247-.922.247z"
+              fill="#339933" />
+          </svg>
+          <div class="tech-name">Node.js</div>
+        </div>
+
+        <!-- Database -->
+        <div class="tech-icon" style="color: #336791;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <ellipse cx="12" cy="5" rx="9" ry="3" stroke="#336791" stroke-width="2" fill="rgba(51,103,145,0.2)" />
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" stroke="#336791" stroke-width="2" />
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" stroke="#336791" stroke-width="2" fill="none" />
+          </svg>
+          <div class="tech-name">Database</div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="tech-icon" style="color: #4285f4;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M18.5 13h-13c-1.1 0-2-.9-2-2s.9-2 2-2c.35 0 .69.08 1 .22C7.39 7.33 9.37 6 11.6 6c2.85 0 5.15 2.41 5.15 5.38 0 .28-.02.55-.06.82.8.16 1.31.89 1.31 1.8 0 1-.8 2-2 2z"
+              fill="#4285f4" />
+          </svg>
+          <div class="tech-name">Cloud</div>
+        </div>
+
+        <!-- Analytics -->
+        <div class="tech-icon" style="color: #ff6b35;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <path d="M3 3v18h18" stroke="#ff6b35" stroke-width="2" />
+            <path d="M7 16l4-4 4 4 6-6" stroke="#ff6b35" stroke-width="2" fill="none" />
+            <circle cx="7" cy="16" r="2" fill="#ff6b35" />
+            <circle cx="11" cy="12" r="2" fill="#ff6b35" />
+            <circle cx="15" cy="16" r="2" fill="#ff6b35" />
+            <circle cx="21" cy="10" r="2" fill="#ff6b35" />
+          </svg>
+          <div class="tech-name">Analytics</div>
+        </div>
+
+        <!-- AI -->
+        <div class="tech-icon" style="color: #8e44ad;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none">
+            <circle cx="9" cy="12" r="1" fill="#8e44ad" />
+            <circle cx="15" cy="12" r="1" fill="#8e44ad" />
+            <path d="M8 21l4-7 4 7M3 7l3 2-3 2M18 7l3 2-3 2" stroke="#8e44ad" stroke-width="2" />
+            <path
+              d="M7.5 4.21c.79-.02 1.61.04 2.5.21 1.77-.37 3.94-.35 5.5.21 2.5 1.5 3.5 4.5 2.5 7.5-.5 1.5-1.5 2.5-3 3-1.5.5-3.5.5-5 0-1.5-.5-2.5-1.5-3-3-1-3 0-6 2.5-7.5.89-.56 1.71-.62 2.5-.21"
+              stroke="#8e44ad" stroke-width="2" fill="rgba(142,68,173,0.1)" />
+          </svg>
+          <div class="tech-name">AI/ML</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section"
+    style="background: var(--dark-gradient); color: white; position: relative; overflow: hidden;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Video Background -->
+        <div class="col-lg-6 fade-in">
+          <div class="video-container" style="position: relative; border-radius: 20px; overflow: hidden;">
+            <video class="w-100" autoplay muted loop playsinline style="border-radius: 20px;">
+              <source src="./Assets/video/Nosotros.mp4" type="video/mp4">
+              Tu navegador no soporta videos HTML5.
+            </video>
+          </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="col-lg-6 fade-in">
+          <h2 class="display-4 mb-4" style="color: white;">Sé uno de nosotros</h2>
+          <p class="lead mb-4" style="color: rgba(255,255,255,0.9);">
+            Si eres un profesional del área de la tecnología, con ganas de aprender y crecer,
+            ¡te invitamos a ser parte de nuestro equipo!
+          </p>
+          <p class="mb-4" style="color: rgba(255,255,255,0.8);">
+            En IRL Tech Solutions buscamos personas apasionadas por la tecnología y el desarrollo
+            de soluciones innovadoras. Ofrecemos un ambiente de trabajo colaborativo, oportunidades
+            de desarrollo profesional y proyectos desafiantes.
+          </p>
+          <button class="btn btn-contact">Postula ahora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA Seccion -->
+  <section class="section"
+    style="background: url('./Assets/img/foto2.jpg') center/cover no-repeat; color: white; min-height: 70vh; display: flex; align-items: center; text-align: center; position: relative;">
+    <div
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 1;">
+    </div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="fade-in"
+            style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; margin-bottom: 2rem; color: white; line-height: 1.2;">
+            "No solo diseñamos tecnologías"</h2>
+          <h3 class="fade-in"
+            style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 400; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
+            También creamos soluciones inteligentes, rápidas y permanentes</h3>
+          <button class="btn btn-light btn-lg px-5 fade-in"
+            style="border-radius: 50px; font-weight: 600; color: #667eea; padding: 1rem 3rem; font-size: 1.1rem;">Comenzar
+            proyecto</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="section" style="background: url('./Assets/img/FONDO3.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h2 class="section-title fade-in" style="color: white;">Contáctanos</h2>
+      <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
+        Si tienes alguna consulta o necesitas más información, no dudes en contactarnos.
+        Podemos orientar tus ideas de negocio y desarrollarlas.
+      </p>
+
+      <form class="contact-form fade-in">
+        <h3 style="color: white; text-align: center; margin-bottom: 2rem;">Formulario de contacto</h3>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" style="color: white;">Nombre <span style="color: #667eea;">*</span></label>
+            <input type="text" class="form-control" name="nombre" placeholder="Tu nombre" required>
+            <small class="character-count">0/255</small>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" style="color: white;">E-mail <span style="color: #667eea;">*</span></label>
+            <input type="email" class="form-control" name="email" placeholder="tu@email.com" required>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <!-- NUEVA VERSIÓN: -->
+          <div class="col-md-6">
+            <label class="form-label" style="color: white;">Teléfono</label>
+            <div class="phone-grid">
+              <select class="form-control phone-code" name="codigo">
+                <option value="+56">+56</option>
+                <option value="+1">+1</option>
+                <option value="+34">+34</option>
+                <option value="+52">+52</option>
+                <option value="+57">+57</option>
+              </select>
+              <input type="tel" class="form-control phone-number" name="telefono" placeholder="912345678">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" style="color: white;">País <span style="color: #667eea;">*</span></label>
+            <select class="form-control" name="pais" required>
+              <option value="">Selecciona tu país</option>
+              <option value="Chile">Chile</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Colombia">Colombia</option>
+              <option value="México">México</option>
+              <option value="Perú">Perú</option>
+              <option value="España">España</option>
+              <option value="Estados Unidos">Estados Unidos</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" style="color: white;">Nombre de la empresa <span
+              style="color: #667eea;">*</span></label>
+          <input type="text" class="form-control" name="empresa" placeholder="Tu empresa" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" style="color: white;">Cuéntanos tu solicitud <span
+              style="color: #667eea;">*</span></label>
+          <small style="color: rgba(255,255,255,0.6); display: block; margin-bottom: 0.5rem;">Mín 30 y máx 300
+            caracteres</small>
+          <textarea class="form-control message-textarea" name="mensaje" rows="4"
+            placeholder="Describe tu proyecto o necesidad..." required minlength="30" maxlength="300"></textarea>
+          <small class="character-count-message">0/300</small>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-contact">
+            <!-- Send SVG -->
+            <svg class="icon-svg me-2" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+            </svg>
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="footer-brand mb-3">
+            <img src="./Assets/img/LOGOPRO.png" alt="IRL Tech Solutions" width="160" height="45"
+              style="margin-bottom: 1rem;">
+          </div>
+          <h5>IRL Tech Solutions</h5>
+          <p>Transformando el futuro a través de la tecnología</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <h6>Síguenos en:</h6>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/irl-tech-consulting-solutions%C2%A0spa" target="_blank">
+              <!-- LinkedIn SVG -->
+              <svg class="icon-svg" viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/irltechsolutionschile" target="_blank">
+              <!-- Instagram SVG -->
+              <svg class="icon-svg" viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/56929639651" target="_blank">
+              <!-- WhatsApp SVG -->
+              <svg class="icon-svg" viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color: rgba(255,255,255,0.2);">
+      <div class="text-center">
+        <p>&copy; 2025 IRL Tech Solutions. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Agendar Button -->
+  <div class="floating-agendar">
+    <a href="https://calendly.com/lucas-camposm-utem/30min?month=2025-08" target="_blank" class="btn btn-agendar">
+      <!-- Calendario SVG -->
+      <svg class="icon-svg me-2" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
+        <path
+          d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+      </svg>
+      AGENDAR
+    </a>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <!-- Chevron Up SVG -->
+    <svg class="icon-svg" viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Assets/script/script.js"></script>
+</body>
+
+</html>
