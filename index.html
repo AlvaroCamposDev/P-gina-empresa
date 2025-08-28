@@ -19,7 +19,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#" style="position: relative; left: -60px;">
-        <img src="./Assets/img/LOGOPRO.png" alt="IRL Tech Logo" width="140" height="40">
+        <img src="./Assets/img/LOGOPRO2.png" alt="IRL Tech Logo" width="140" height="40">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -124,7 +124,7 @@
 
   <!-- About Section -->
   <section class="section" id="nosotros"
-    style="background: url('./Assets/img/FONDO222.jpg') center/cover no-repeat; color: white; min-height: 80vh; display: flex; align-items: center; position: relative;">
+    style="background: url('./Assets/img/portada.jpg') center/cover no-repeat; color: white; min-height: 80vh; display: flex; align-items: center; position: relative;">
     <!-- Difuminado exactamente en la mitad izquierda -->
     <div
       style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; backdrop-filter: blur(8px); background: rgba(0,0,0,0.3); z-index: 1;">
@@ -163,71 +163,75 @@
   <section id="servicios" class="section futuristic-section">
     <div class="container">
       <h2 class="section-title fade-in section-title-green">Revisa nuestra carta de Servicios TI</h2>
-      <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.8);">
+      <p class="section-subtitle fade-in" style="color: rgba(7, 7, 7, 0.8);">
         Diseñamos soluciones humanas y tecnológicas que se adaptan a ti y a tu organización.
         Combinamos innovación, precisión y tecnología de vanguardia.
       </p>
 
-      <!-- NUEVOS CARDS CON ZOOM -->
-      <div class="zoom-cards">
-        <!-- Card 1: IT Staffing -->
-        <div class="zoom-card service-card-1 fade-in">
-          <div class="card-image-container">
-            <img src="./Assets/img/Card1.jpg" alt="IT Staffing" class="card-background-image">
-            <div class="image-overlay"></div>
-          </div>
-          <div class="card-badge">IT Staff</div>
-          <div class="card-content">
-            <h4>IT Staffing & Recruiting</h4>
-            <p class="card-subtitle">El talento adecuado, en el momento justo.</p>
-            <p class="card-description">
-              En un mundo donde la velocidad de ejecución marca la diferencia, en IRL Tech conectamos a las empresas con
-              el mejor talento tecnológico del mercado. Ya sea a través de outsourcing, hunting o equipos a medida, te
-              ayudamos a escalar capacidades rápidamente, sin comprometer calidad.
-            </p>
+       <div class="services-grid">
+                
+                <!-- Card 1: IT Staffing -->
+                <figure class="service-card card-1 fade-in" role="article" aria-label="IT Staffing & Recruiting">
+                    <img src="./Assets/img/Card1.jpg" alt="Equipo de profesionales IT colaborando en proyectos tecnológicos">
+                    <div class="card-badge">IT Staff</div>
+                    <figcaption class="card-content">
+                        <div>
+                            <h3 class="card-title">IT Staffing & Recruiting</h3>
+                            <p class="card-subtitle">El talento adecuado, en el momento justo.</p>
+                            <p class="card-description">
+                                En un mundo donde la velocidad de ejecución marca la diferencia, en IRL Tech conectamos a las empresas con
+                                el mejor talento tecnológico del mercado. Ya sea a través de outsourcing, hunting o equipos a medida, te
+                                ayudamos a escalar capacidades rápidamente, sin comprometer calidad.
+                            </p>
+                            <button class="card-button" onclick="openServiceDetail('staffing')">Conocer más</button>
+                        </div>
+                    </figcaption>
+                </figure>
 
-          </div>
+                <!-- Card 2: AI Teams -->
+                <figure class="service-card card-2 fade-in" role="article" aria-label="Equipos Aumentados con AI">
+                    <img src="./Assets/img/Card2.jpg" alt="Desarrolladores trabajando con inteligencia artificial y algoritmos">
+                    <div class="card-badge">Equipo</div>
+                    <figcaption class="card-content">
+                        <div>
+                            <h3 class="card-title">Equipos Aumentados con AI</h3>
+                            <p class="card-subtitle">El poder del software, acelerado con inteligencia artificial.</p>
+                            <p class="card-description">
+                                Nuestros equipos de desarrollo gestionados combinan experiencia técnica, prácticas ágiles y herramientas
+                                potenciadas con IA para entregar resultados más rápidos, predecibles y de alta calidad.
+                            </p>
+                            <button class="card-button" onclick="openServiceDetail('ai-teams')">Conocer más</button>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <!-- Card 3: IT Academy -->
+                <figure class="service-card card-3 fade-in" role="article" aria-label="IT Academy">
+                    <img src="./Assets/img/Card3.jpg" alt="Estudiantes y profesores en clase de tecnología avanzada">
+                    <div class="card-badge">Academia</div>
+                    <figcaption class="card-content">
+                        <div>
+                            <h3 class="card-title">IT Academy</h3>
+                            <p class="card-subtitle">Formación que transforma. Capacidades que perduran.</p>
+                            <p class="card-description">
+                                En la era digital, aprender rápido es una ventaja competitiva. Por eso, en conjunto con nuestros partners
+                                IT Academy diseñamos experiencias de formación adaptadas a los desafíos del negocio y a la
+                                evolución constante del mundo tecnológico.
+                            </p>
+                            <button class="card-button" onclick="openServiceDetail('academy')">Conocer más</button>
+                        </div>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <!-- Navigation -->
+            <div class="carousel-nav">
+                 
+                </button>
+            </div>
         </div>
-
-        <!-- Card 2: AI Teams -->
-        <div class="zoom-card service-card-2 fade-in">
-          <div class="card-image-container">
-            <img src="./Assets/img/Card2.jpg" alt="Equipos AI" class="card-background-image">
-            <div class="image-overlay"></div>
-          </div>
-          <div class="card-badge">Equipo</div>
-          <div class="card-content">
-            <h4>Equipos Aumentados con AI</h4>
-            <p class="card-subtitle">El poder del software, acelerado con inteligencia artificial.</p>
-            <p class="card-description">
-              Nuestros equipos de desarrollo gestionados combinan experiencia técnica, prácticas ágiles y herramientas
-              potenciadas con IA para entregar resultados más rápidos, predecibles y de alta calidad.
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 3: IT Academy -->
-        <div class="zoom-card service-card-3 fade-in">
-          <div class="card-image-container">
-            <img src="./Assets/img/Card3.jpg" alt="IT Academia" class="card-background-image">
-            <div class="image-overlay"></div>
-          </div>
-          <div class="card-badge">Academia</div>
-          <div class="card-content">
-            <h4>IT Academy</h4>
-            <p class="card-subtitle">Formación que transforma. Capacidades que perduran.</p>
-            <p class="card-description">
-              En la era digital, aprender rápido es una ventaja competitiva. Por eso, en conjunto con nuestros partners
-              IT Academy diseñamos experiencias de formación adaptadas a los desafíos del negocio y a la
-              evolución constante del mundo tecnológico.
-            </p>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
   <!-- Companies Section -->
   <section class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
@@ -582,37 +586,63 @@
   </section>
 
   <!-- Team Section -->
-  <section class="section"
-    style="background: var(--dark-gradient); color: white; position: relative; overflow: hidden;">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Video Background -->
-        <div class="col-lg-6 fade-in">
-          <div class="video-container" style="position: relative; border-radius: 20px; overflow: hidden;">
-            <video class="w-100" autoplay muted loop playsinline style="border-radius: 20px;">
-              <source src="./Assets/video/Nosotros.mp4" type="video/mp4">
-              Tu navegador no soporta videos HTML5.
-            </video>
+  <!-- Team Section - CARRUSEL CORREGIDO -->
+  <section class="team-carousel-section">
+    <div class="team-carousel-container">
+
+      <div class="team-carousel-title">NUESTRO EQUIPO</div>
+
+      <div class="team-carousel-wrapper">
+        <button class="team-navigation-arrows team-prev-arrow">‹</button>
+        <button class="team-navigation-arrows team-next-arrow">›</button>
+
+        <div class="team-carousel-track">
+          <div class="team-card" data-index="0">
+            <img src="./Assets/img/RIMSKY.png" alt="Rimsky Farías">
+          </div>
+
+          <div class="team-card" data-index="1">
+            <img src="./Assets/img/GALEAS.png" alt="Ignacio Galeas">
+              
+          </div>
+
+          <div class="team-card" data-index="2">
+            <img src="./Assets/img/LUCAS.png" alt="Lucas Campos">
+          </div>
+
+          <div class="team-card" data-index="3">
+            <img src="./Assets/img/JAIME.jpeg" alt="Jaime González">
+          </div>
+
+          <div class="team-card" data-index="3">
+            <img src="./Assets/img/Card1.jpg" alt="Álvaro Campos">
+          </div>
+
+          <div class="team-card" data-index="3">
+            <img src="./Assets/img/CARLOS.png" alt="Carlos Pardo">
           </div>
         </div>
+      </div>
 
-        <!-- Text Content -->
-        <div class="col-lg-6 fade-in">
-          <h2 class="display-4 mb-4" style="color: white;">Sé uno de nosotros</h2>
-          <p class="lead mb-4" style="color: rgba(255,255,255,0.9);">
-            Si eres un profesional del área de la tecnología, con ganas de aprender y crecer,
-            ¡te invitamos a ser parte de nuestro equipo!
-          </p>
-          <p class="mb-4" style="color: rgba(255,255,255,0.8);">
-            En IRL Tech Solutions buscamos personas apasionadas por la tecnología y el desarrollo
-            de soluciones innovadoras. Ofrecemos un ambiente de trabajo colaborativo, oportunidades
-            de desarrollo profesional y proyectos desafiantes.
-          </p>
-          <button class="btn btn-contact">Postula ahora</button>
-        </div>
+      <div class="team-member-details">
+        <div class="team-member-name">Ana Martín</div>
+        <div class="team-member-position">Gerente de Marketing</div>
+      </div>
+
+
+
+      <div class="team-dots-navigation">
+        <div class="team-dot"></div>
+        <div class="team-dot"></div>
+        <div class="team-dot active"></div>
+        <div class="team-dot"></div>
+        <div class="team-dot"></div>
       </div>
     </div>
   </section>
+
+
+  <!-- Text Content -->
 
 
   <!-- CTA Seccion -->
