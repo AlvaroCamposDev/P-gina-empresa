@@ -1,0 +1,412 @@
+/* About Section Professional - CSS Completamente Aislado */
+/* IMPORTANTE: Este CSS NO debe afectar otras secciones */
+
+/* About Section ÚNICO - Professional Design */
+section.about-section#nosotros {
+    position: relative !important;
+    min-height: 100vh !important;
+
+    background: url('../../Assets/img/fondo222.jpg') center/cover no-repeat;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+}
+
+section.about-section#nosotros::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(79, 172, 254, 0.1) 0%, transparent 50%) !important;
+    z-index: 1 !important;
+}
+
+section.about-section#nosotros .about-container {
+    position: relative !important;
+    z-index: 2 !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+    width: 100% !important;
+}
+
+section.about-section#nosotros .about-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4rem !important;
+    align-items: center !important;
+    min-height: 80vh !important;
+}
+
+/* Left Content - ESPECÍFICO PARA ABOUT */
+section.about-section#nosotros .about-content {
+    padding: 2rem 0 !important;
+}
+
+section.about-section#nosotros .about-badge {
+    display: inline-block !important;
+    padding: 0.5rem 1.5rem !important;
+    background: rgba(102, 126, 234, 0.2) !important;
+    border: 1px solid rgba(102, 126, 234, 0.4) !important;
+    border-radius: 50px !important;
+    color: #667eea !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 2rem !important;
+    transition: all 0.3s ease !important;
+}
+
+section.about-section#nosotros .about-badge:hover {
+    background: rgba(102, 126, 234, 0.3) !important;
+    transform: scale(1.05) !important;
+}
+
+section.about-section#nosotros .about-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2rem !important;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+section.about-section#nosotros .about-subtitle {
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    color: #4facfe !important;
+    margin-bottom: 2rem !important;
+    line-height: 1.5 !important;
+}
+
+section.about-section#nosotros .about-description {
+    font-size: 1.1rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    line-height: 1.7 !important;
+    margin-bottom: 3rem !important;
+}
+
+/* Statistics - ESPECÍFICO PARA ABOUT */
+section.about-section#nosotros .about-stats {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+    margin-bottom: 3rem !important;
+}
+
+section.about-section#nosotros .stat-item {
+    text-align: center !important;
+    padding: 1.5rem !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+section.about-section#nosotros .stat-item:hover {
+    transform: translateY(-5px) !important;
+    background: rgba(102, 126, 234, 0.1) !important;
+    border-color: rgba(102, 126, 234, 0.3) !important;
+}
+
+section.about-section#nosotros .stat-number {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #4facfe !important;
+    display: block !important;
+    margin-bottom: 0.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+section.about-section#nosotros .stat-label {
+    font-size: 0.9rem !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+}
+
+section.about-section#nosotros .stat-item:hover .stat-number {
+    color: #667eea !important;
+    transform: scale(1.1) !important;
+}
+
+section.about-section#nosotros .stat-item:hover .stat-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* CTA Buttons - ESPECÍFICO PARA ABOUT */
+section.about-section#nosotros .about-cta {
+    display: flex !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+}
+
+section.about-section#nosotros .cta-button {
+    padding: 1rem 2.5rem !important;
+    background: linear-gradient(135deg, #667eea 0%, #4facfe 100%) !important;
+    border: none !important;
+    border-radius: 50px !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+section.about-section#nosotros .cta-button::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent) !important;
+    transition: left 0.5s ease !important;
+}
+
+section.about-section#nosotros .cta-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4) !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+section.about-section#nosotros .cta-button:hover::before {
+    left: 100% !important;
+}
+
+section.about-section#nosotros .button-emoji {
+    font-size: 1rem !important;
+}
+
+section.about-section#nosotros .cta-secondary {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid transparent !important;
+    transition: all 0.3s ease !important;
+    padding: 0.5rem 0 !important;
+}
+
+section.about-section#nosotros .cta-secondary:hover {
+    color: #4facfe !important;
+    border-bottom-color: #4facfe !important;
+    text-decoration: none !important;
+    transform: translateX(5px) !important;
+}
+
+/* Right Visual - ESPECÍFICO PARA ABOUT */
+section.about-section#nosotros .about-visual {
+    position: relative !important;
+    height: 600px !important;
+}
+
+section.about-section#nosotros .visual-card {
+    position: absolute !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 20px !important;
+    padding: 2rem !important;
+    transition: all 0.4s ease !important;
+    cursor: pointer !important;
+}
+
+section.about-section#nosotros .visual-card:hover {
+    transform: translateY(-10px) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(102, 126, 234, 0.3) !important;
+}
+
+section.about-section#nosotros .visual-card.card-1 {
+    top: 0 !important;
+    left: 0 !important;
+    width: 280px !important;
+    height: 200px !important;
+    animation: aboutFloat 6s ease-in-out infinite !important;
+}
+
+section.about-section#nosotros .visual-card.card-2 {
+    top: 120px !important;
+    right: 0 !important;
+    width: 300px !important;
+    height: 180px !important;
+    animation: aboutFloat 6s ease-in-out infinite 2s !important;
+}
+
+section.about-section#nosotros .visual-card.card-3 {
+    bottom: 0 !important;
+    left: 50px !important;
+    width: 260px !important;
+    height: 160px !important;
+    animation: aboutFloat 6s ease-in-out infinite 4s !important;
+}
+
+section.about-section#nosotros .card-icon {
+    width: 40px !important;
+    height: 40px !important;
+    background: linear-gradient(135deg, #667eea, #4facfe) !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    transition: all 0.3s ease !important;
+}
+
+section.about-section#nosotros .visual-card:hover .card-icon {
+    transform: scale(1.1) !important;
+    background: linear-gradient(135deg, #4facfe, #667eea) !important;
+}
+
+/* Animaciones específicas para About */
+@keyframes aboutFloat {
+    0%, 100% { 
+        transform: translateY(0px); 
+    }
+    50% { 
+        transform: translateY(-20px); 
+    }
+}
+
+@keyframes aboutFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section.about-section#nosotros .fade-in {
+    animation: aboutFadeInUp 0.8s ease-out forwards !important;
+}
+
+/* Mobile Responsive - ESPECÍFICO PARA ABOUT */
+@media (max-width: 768px) {
+    section.about-section#nosotros {
+        min-height: auto !important;
+        padding: 4rem 0 !important;
+    }
+
+    section.about-section#nosotros .about-container {
+        padding: 0 1rem !important;
+    }
+
+    section.about-section#nosotros .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 3rem !important;
+        text-align: center !important;
+    }
+
+    section.about-section#nosotros .about-title {
+        font-size: 2.5rem !important;
+    }
+
+    section.about-section#nosotros .about-subtitle {
+        font-size: 1.2rem !important;
+    }
+
+    section.about-section#nosotros .about-description {
+        font-size: 1rem !important;
+    }
+
+    section.about-section#nosotros .about-stats {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    section.about-section#nosotros .about-cta {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+
+    section.about-section#nosotros .cta-button {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    section.about-section#nosotros .about-visual {
+        height: 400px !important;
+        order: -1 !important;
+    }
+
+    section.about-section#nosotros .visual-card {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        margin-bottom: 1rem !important;
+    }
+
+    section.about-section#nosotros .visual-card.card-1,
+    section.about-section#nosotros .visual-card.card-2,
+    section.about-section#nosotros .visual-card.card-3 {
+        animation: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    section.about-section#nosotros .about-title {
+        font-size: 2rem !important;
+    }
+
+    section.about-section#nosotros .about-visual {
+        height: auto !important;
+    }
+    
+    section.about-section#nosotros .about-container {
+        padding: 0 1rem !important;
+    }
+}
+
+/* Accessibility - ESPECÍFICO PARA ABOUT */
+@media (prefers-reduced-motion: reduce) {
+    section.about-section#nosotros .visual-card {
+        animation: none !important;
+    }
+    
+    section.about-section#nosotros .stat-item:hover {
+        transform: none !important;
+    }
+    
+    section.about-section#nosotros .cta-button:hover {
+        transform: none !important;
+    }
+}
+
+/* Focus states - ESPECÍFICO PARA ABOUT */
+section.about-section#nosotros .cta-button:focus,
+section.about-section#nosotros .cta-secondary:focus,
+section.about-section#nosotros .stat-item:focus {
+    outline: 2px solid #4facfe !important;
+    outline-offset: 2px !important;
+}
+
+section.about-section#nosotros .visual-card:focus {
+    outline: 2px solid rgba(79, 172, 254, 0.5) !important;
+    outline-offset: 2px !important;
+}
